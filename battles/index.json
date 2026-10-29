@@ -1,0 +1,6 @@
+{
+  "schema": "ffxi-battle-motion/index@1",
+  "battles": [
+    { "id": "sheol-arebati-v25-b2", "title": "Arebati Veng+25 2戦目", "file": "battles/sheol-arebati-v25-b2.json" }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": "ffxi-battle-motion/sync@1",
+  "battleId": "sheol-arebati-v25-b2",
+  "videoId": "A",
+  "youtubeId": "IUVoTOXzPPQ",
+  "fight": 2,
+  "note": "未同期。編集者が目視で同期点を登録してJSON保存し、このファイルを差し替える。",
+  "points": []
+}

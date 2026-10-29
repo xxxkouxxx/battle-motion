@@ -1,0 +1,53 @@
+{
+  "schema": "ffxi-battle-motion/battle@1",
+  "id": "content-boss-tier",
+  "title": "ボス名 V25",
+  "content": "Sheol Gaol",
+  "boss": "BossName",
+  "tier": "V25",
+  "fight": 1,
+  "summary": "作戦の一行要約",
+  "sources": [
+    { "id": "src1", "kind": "article", "title": "記事タイトル", "url": "https://example.com/", "checked": "YYYY-MM-DD" }
+  ],
+  "videos": [
+    { "id": "A", "youtubeId": "XXXXXXXXXXX", "label": "○○目線", "author": "投稿者", "pov": { "1": "ジョブ名" }, "povProv": "unverified", "note": "" }
+  ],
+  "roles": [
+    { "id": "PLD", "short": "ナ", "name": "ナイト", "color": "#6ea8ff", "duty": "役割", "notes": [], "prov": "article", "src": "src1" },
+    { "id": "WHM", "short": "白", "name": "白魔道士", "color": "#f2f2f2", "duty": "役割", "notes": [], "prov": "article", "src": "src1" }
+  ],
+  "events": [
+    {
+      "id": "e01", "order": 1, "demoT": 0,
+      "phase": "開幕", "title": "場面のタイトル", "trigger": "きっかけ",
+      "summary": "説明", "prov": "article", "src": "src1",
+      "actions": [
+        { "role": "PLD", "do": "やること", "target": "対象", "why": "理由", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e02", "order": 2, "demoT": 30,
+      "phase": "中盤", "title": "場面のタイトル", "trigger": "HP○%",
+      "summary": "説明", "prov": "article", "src": "src1",
+      "actions": [
+        { "role": "WHM", "do": "やること", "target": "対象", "why": "理由", "prov": "article" }
+      ]
+    }
+  ],
+  "demo": {
+    "prov": "assumption",
+    "duration": 60,
+    "note": "座標・移動・HP・秒数は説明用の仮定データ。",
+    "map": { "width": 1000, "height": 560, "zones": [] },
+    "units": [
+      { "id": "boss", "kind": "enemy", "label": "BOSS", "short": "BOSS", "color": "#ff8a96", "size": 30, "keys": [[0, 700, 280]] },
+      { "id": "PLD", "role": "PLD", "keys": [[0, 300, 280], [10, 640, 280]] },
+      { "id": "WHM", "role": "WHM", "keys": [[0, 300, 360], [10, 450, 380]] }
+    ],
+    "hp": [[0, 100], [60, 0]],
+    "fx": [
+      { "from": 30, "to": 40, "type": "line", "src": "WHM", "dst": "PLD", "style": "buff", "text": "回復" }
+    ]
+  }
+}

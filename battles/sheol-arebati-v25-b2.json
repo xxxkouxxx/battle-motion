@@ -1,0 +1,323 @@
+{
+  "schema": "ffxi-battle-motion/battle@1",
+  "id": "sheol-arebati-v25-b2",
+  "title": "Arebati Veng+25 2戦目",
+  "content": "Sheol Gaol",
+  "boss": "Arebati",
+  "tier": "V25",
+  "fight": 2,
+  "summary": "75%から開始。護衛でTPを溜めWSだけ本体へ、獣使いのTP吸収キッスで特殊技を完封する作戦。",
+  "sources": [
+    {
+      "id": "jinko-p3",
+      "kind": "article",
+      "title": "JinkoのFF11日記 — シェオルジェール Arebati veng25 戦術と実践記録 Part3",
+      "url": "https://jinko0914.seesaa.net/article/513963925.html",
+      "checked": "2026-10-29"
+    }
+  ],
+  "videos": [
+    {
+      "id": "A",
+      "youtubeId": "IUVoTOXzPPQ",
+      "label": "白・ナ目線",
+      "author": "S-H",
+      "pov": { "1": "白魔道士", "2": "ナイト" },
+      "povProv": "unverified",
+      "note": "タイトルから1戦目=白魔道士・2戦目=ナイトの視点と推定（未視聴）。同期対象は2戦目区間のみ。"
+    },
+    {
+      "id": "B",
+      "youtubeId": "8j_RGlLJNeY",
+      "label": "風・吟目線",
+      "author": "Light_STAR",
+      "pov": { "1": "風水士", "2": "吟遊詩人" },
+      "povProv": "unverified",
+      "note": "タイトルから1戦目=風水士・2戦目=吟遊詩人の視点と推定（未視聴）。同期対象は2戦目区間のみ。"
+    }
+  ],
+  "roles": [
+    {
+      "id": "PLD", "short": "ナ", "name": "ナイト", "color": "#6ea8ff",
+      "duty": "盾：護衛のヘイト維持・範囲回復の兼任",
+      "notes": [
+        "持込インデ：インデリジェネ",
+        "開幕は護衛にフラッシュ＋シールドバッシュでタゲ固定",
+        "Arebatiのヘイト2位は意識不要。2体目護衛pop時に一気に上げる",
+        "レッドロータス等で累積同一技耐性対策に参加"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-1 §5"
+    },
+    {
+      "id": "DNC", "short": "踊", "name": "踊り子", "color": "#ff7eb6",
+      "duty": "主力アタッカー（ルドラストーム）",
+      "notes": [
+        "持込インデ：インデバリア",
+        "武器：トゥワシュトラ＋グレティナイフR30",
+        "ボックスステップ10段階を維持",
+        "C.フラリッシュ後の2回目WS狙い時のみTP1000超で即撃ち可"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-2 §5"
+    },
+    {
+      "id": "RDM", "short": "赤", "name": "赤魔道士", "color": "#ff6b6b",
+      "duty": "弱体・アタッカー（マーシーストローク）",
+      "notes": [
+        "持込インデ：インデデック",
+        "必要弱体：サイレス・パライズII・ディアIII",
+        "サイレスは約6分20秒、パライズIIは約7分37秒で切れる時間差あり",
+        "サボトゥールはサイレス側を優先"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-1 §5"
+    },
+    {
+      "id": "COR", "short": "コ", "name": "コルセア", "color": "#ffc35c",
+      "duty": "支援・アタッカー（ラストスタンド／デトネーター交互）",
+      "notes": [
+        "持込インデ：インデフューリー",
+        "階段上：クルケ→ランダムディール→カオス／呪歌完成直前：クルケ→サムライ",
+        "八重霞中も遠隔攻撃は継続可",
+        "ワイルドカードはアンリーシュ＋グランドパー発動後"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-1 §5"
+    },
+    {
+      "id": "BRD", "short": "吟", "name": "吟遊詩人", "color": "#b49bff",
+      "duty": "支援・アタッカー（モーダントライム／ガストスラッシュ）",
+      "notes": [
+        "持込インデ：インデフェンド（詩人または獣使い）",
+        "階段上は5曲の下地のみ。スリプルII直後に本歌で上書き",
+        "インデが切れたらピアニッシモ＋スケルツォで踊り子のアリアを上書き",
+        "アンリーシュ終了後は攻撃から離れてガストスラッシュ連打"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-1 §4-3 §5"
+    },
+    {
+      "id": "BST", "short": "獣", "name": "獣使い", "color": "#5fd39a",
+      "duty": "TP消去（本体は攻撃参加なし）",
+      "notes": [
+        "階段上でK.インスティンクト（プラントイド使用）",
+        "TP吸収キッスは1秒も遅らせない。遅延につながるWSは厳禁",
+        "25%でアンリーシュ"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-1 §5"
+    },
+    {
+      "id": "PET", "short": "PET", "name": "獣使いのペット", "color": "#7af0d0", "owner": "BST",
+      "duty": "TP吸収キッスでArebatiの特殊技を阻止",
+      "notes": [
+        "八重霞中もTP吸収キッスは対象外（継続可）"
+      ],
+      "prov": "article", "src": "jinko-p3 §4-3 §5"
+    }
+  ],
+  "events": [
+    {
+      "id": "e01", "order": 1, "demoT": 0,
+      "phase": "開幕準備", "title": "階段上で事前強化",
+      "trigger": "BF突入後・階段上",
+      "summary": "ナイト突撃までの支援を素早く確実に終える。記事では全体1分以内が目安。",
+      "prov": "article", "src": "jinko-p3 §4-1",
+      "actions": [
+        { "role": "PLD", "do": "マジェスティ＋プロテスV、シェルIV", "target": "ナ・獣・詩・コ・赤", "why": "被ダメ軽減の下地", "prov": "article" },
+        { "role": "RDM", "do": "ヘイストII・ファランクスII・シェルV・ストライII・ゲインスト・リフレシュIII等", "target": "赤・詩・コ・踊／ナ・踊", "why": "アタッカーと盾の強化", "prov": "article" },
+        { "role": "BST", "do": "K.インスティンクト（プラントイド使用）", "target": "自分", "why": "記事記載の事前準備", "prov": "article" },
+        { "role": "BRD", "do": "5曲の下地のみ歌う", "target": "全体", "why": "本歌はスリプルII直後に上書きする", "prov": "article" },
+        { "role": "COR", "do": "クルケ→ランダムディール→カオス", "target": "全体", "why": "1個目と2個目のロールの間隔を空ける", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e02", "order": 2, "demoT": 10,
+      "phase": "開幕", "title": "ナイトが釣る",
+      "trigger": "強化完了後",
+      "summary": "ナイトがArebatiに絡まれる形で釣る。2戦目のArebatiはHP75%ちょうどで出現する。",
+      "prov": "article", "src": "jinko-p3 §4-3",
+      "actions": [
+        { "role": "PLD", "do": "センチネル・ランパート・フィールティ", "target": "Arebati", "why": "絡まれる形で釣る", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e03", "order": 3, "demoT": 18,
+      "phase": "75%：護衛1体目", "title": "赤魔道士の初撃で護衛出現 → スリプルII",
+      "trigger": "ダメージを1以上与える",
+      "summary": "釣るだけでは護衛は出ない。赤魔道士が一撃入れて護衛1体目をpopさせ、八重霞が来る。直後にArebatiを寝かせる。",
+      "prov": "article", "src": "jinko-p3 §4-3",
+      "actions": [
+        { "role": "RDM", "do": "一撃 → スタイミー＋スリプルII", "target": "Arebati", "why": "護衛を出現させてから本体を寝かせる", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e04", "order": 4, "demoT": 26,
+      "phase": "開幕", "title": "呪歌開始・ナイトが護衛を確保",
+      "trigger": "スリプルII直後",
+      "summary": "詩人は本歌で上書き開始。ナイトは護衛のタゲを固定。コルセアは全員集合後・呪歌完成直前に2個目のロール。",
+      "prov": "article", "src": "jinko-p3 §4-1 §4-3 §5",
+      "actions": [
+        { "role": "BRD", "do": "本歌で上書き", "target": "全体", "why": "下地5曲を本歌に差し替える", "prov": "article" },
+        { "role": "PLD", "do": "フラッシュ・バッシュ", "target": "護衛1", "why": "護衛のタゲをしっかり確保", "prov": "article" },
+        { "role": "COR", "do": "クルケ→サムライ", "target": "全体", "why": "ナイト突撃後、全員集合してから", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e05", "order": 5, "demoT": 33,
+      "phase": "開幕", "title": "ボックスステップ",
+      "trigger": "呪歌開始後",
+      "summary": "踊り子がArebatiにボックスステップを完成させる。",
+      "prov": "article", "src": "jinko-p3 §4-3",
+      "actions": [
+        { "role": "DNC", "do": "プレスト＋ボックスステップ", "target": "Arebati", "why": "防御ダウンの下地（10段階を維持）", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e06", "order": 6, "demoT": 38,
+      "phase": "開幕", "title": "サイレス・パライズII・エレジー",
+      "trigger": "ボックスステップ後",
+      "summary": "赤魔道士が連続魔＋サボトゥールで弱体2種。詩人はエレジー（戦闘終了まで持続）。",
+      "prov": "article", "src": "jinko-p3 §4-3 §5",
+      "actions": [
+        { "role": "RDM", "do": "連続魔＋サボトゥール → サイレス・パライズII", "target": "Arebati", "why": "パライズIIは被ダメージによる与TPを抑える要", "prov": "article" },
+        { "role": "BRD", "do": "ナイトル＋エレジー", "target": "Arebati", "why": "レジストされず戦闘終了まで持続", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e07", "order": 7, "demoT": 46,
+      "phase": "攻撃開始", "title": "ディアIIIで全員攻撃開始",
+      "trigger": "弱体2種の完了",
+      "summary": "この時点で八重霞は必ず終了している。ナイトはアタッカーのHPが減ってもすぐ回復しない。",
+      "prov": "article", "src": "jinko-p3 §4-3",
+      "actions": [
+        { "role": "RDM", "do": "ディアIII", "target": "Arebati", "why": "攻撃開始の合図", "prov": "article" },
+        { "role": "PLD", "do": "すぐに回復しない", "target": "アタッカー", "why": "開幕のヘイト管理を崩さない", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e08", "order": 8, "demoT": 55,
+      "phase": "特殊技完封ループ", "title": "護衛でTP → WSは本体／TP吸収キッス",
+      "trigger": "戦闘開始後〜終盤まで継続",
+      "summary": "アタッカーは護衛へのオートアタックでTPを溜め、WSだけArebatiへ。WSの発動TPはサムライロールの出目で調整（6:1700／7〜10:2000／2・11:2500）。",
+      "prov": "article", "src": "jinko-p3 §4-2 §4-3",
+      "actions": [
+        { "role": "DNC", "do": "護衛でTP → ルドラストーム", "target": "護衛／Arebati", "why": "与TPを抑えつつ火力を出す", "prov": "article" },
+        { "role": "RDM", "do": "護衛でTP → マーシーストローク", "target": "護衛／Arebati", "why": "同上", "prov": "article" },
+        { "role": "COR", "do": "ラストスタンド／デトネーター交互", "target": "Arebati", "why": "累積同一技耐性を避ける", "prov": "article" },
+        { "role": "BRD", "do": "モーダントライム", "target": "Arebati", "why": "25%までは他のWSと同じタイミング", "prov": "article" },
+        { "role": "BST", "do": "TP吸収キッスをリキャストごと", "target": "Arebati", "why": "特殊技の発動を阻止", "prov": "article" },
+        { "role": "PET", "do": "TP吸収キッス", "target": "Arebati", "why": "ArebatiのTPを消す", "prov": "article" },
+        { "role": "PLD", "do": "護衛のタゲ保持＋範囲ケアル", "target": "護衛／PT", "why": "盾と回復の兼任", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e09", "order": 9, "demoT": 66,
+      "phase": "特殊技完封ループ", "title": "持込インデ切れ → スケルツォ上書き",
+      "trigger": "持込インデの効果切れ（時刻は記事に記載なし）",
+      "summary": "詩人がピアニッシモ＋スケルツォで踊り子のアリアを上書きする。ブリザドVによる即死対策。",
+      "prov": "article", "src": "jinko-p3 §4-1 §4-3",
+      "actions": [
+        { "role": "BRD", "do": "ピアニッシモ＋スケルツォ", "target": "踊り子", "why": "ブリザドVの即死対策", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e10", "order": 10, "demoT": 76,
+      "phase": "40%：護衛2体目", "title": "護衛2体目 → インターヴィーン→インビンシブル",
+      "trigger": "HP40%未満（残り9分30秒前後での到達が必須）",
+      "summary": "護衛2体目がpopし八重霞が来る。八重霞中はArebatiにWSを撃たない（遠隔攻撃・TP吸収キッスは対象外）。",
+      "prov": "article", "src": "jinko-p3 §4-3 §5",
+      "actions": [
+        { "role": "PLD", "do": "インターヴィーン → インビンシブル（取れなければフラッシュ＋バッシュ）", "target": "護衛2", "why": "アタッカーの被弾を減らしタゲを奪う", "prov": "article" },
+        { "role": "COR", "do": "遠隔攻撃を継続", "target": "Arebati", "why": "八重霞の対象外", "prov": "article" },
+        { "role": "DNC", "do": "八重霞中はWSを撃たない", "target": "Arebati", "why": "八重霞中のWS禁止", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e11", "order": 11, "demoT": 86,
+      "phase": "終盤", "title": "サイレス切れ → サボトゥールで再付与",
+      "trigger": "サイレス効果切れ（約6分20秒）",
+      "summary": "サイレスはサボトゥール併用で入れ直す。パライズIIは約1分遅れて切れるので単独詠唱でよい。",
+      "prov": "article", "src": "jinko-p3 §4-3 §5",
+      "actions": [
+        { "role": "RDM", "do": "サボトゥール＋サイレス／パライズIIは単独", "target": "Arebati", "why": "効果時間差で同時再付与が困難", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e12", "order": 12, "demoT": 96,
+      "phase": "25%：バースト", "title": "アンリーシュ＋グランドパー → ワイルドカード",
+      "trigger": "HP25%到達",
+      "summary": "アンリーシュ中はダメージ/TP効率が最大になるタイミングで即撃ち。",
+      "prov": "article", "src": "jinko-p3 §4-2 §4-3 §5",
+      "actions": [
+        { "role": "BST", "do": "アンリーシュ", "target": "ペット", "why": "TP吸収を厚くする", "prov": "article" },
+        { "role": "DNC", "do": "グランドパー → C.フラ → ルドラ…", "target": "Arebati", "why": "瞬間火力の集中", "prov": "article" },
+        { "role": "COR", "do": "ワイルドカード", "target": "全体", "why": "アンリーシュ＋グランドパーの直後", "prov": "article" },
+        { "role": "BRD", "do": "モーダントライムをTP1000で即撃ち", "target": "Arebati", "why": "アンリーシュ中は即撃ち", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e13", "order": 13, "demoT": 108,
+      "phase": "20%：終盤", "title": "Arebatiが暴れる → 詩人はガストスラッシュ連打",
+      "trigger": "HP20%以下／アンリーシュ終了",
+      "summary": "20%以下でArebatiが暴れて与TPが増える。詩人は攻撃参加から離れてガストスラッシュを連打する。",
+      "prov": "article", "src": "jinko-p3 §4-3 §5",
+      "actions": [
+        { "role": "BRD", "do": "攻撃から離脱 → ガストスラッシュ連打", "target": "Arebati", "why": "同一技連打による耐性上昇を避ける", "prov": "article" },
+        { "role": "BST", "do": "TP吸収キッスを継続", "target": "Arebati", "why": "与TPが増える局面", "prov": "article" }
+      ]
+    },
+    {
+      "id": "e14", "order": 14, "demoT": 124,
+      "phase": "最終局面", "title": "役割を維持して削り切る",
+      "trigger": "—",
+      "summary": "記事に固有の手順は無い。各自が役割を維持して残りHPを削る、という学習用のまとめ。",
+      "prov": "assumption", "src": "",
+      "actions": [
+        { "role": "PET", "do": "TP吸収キッス継続", "target": "Arebati", "why": "最後まで特殊技を完封", "prov": "assumption" }
+      ]
+    }
+  ],
+  "demo": {
+    "prov": "assumption",
+    "duration": 130,
+    "note": "圧縮デモ時刻・座標・移動・HP推移・攻撃線はすべて説明用の仮定データ。実際のBF形状・距離・時刻とは無関係。",
+    "map": { "width": 1000, "height": 560, "zones": [ { "label": "階段", "x": 40, "y": 110, "w": 150, "h": 300 } ] },
+    "units": [
+      { "id": "boss", "kind": "enemy", "label": "AREBATI", "short": "BOSS", "color": "#ff8a96", "size": 30, "keys": [[0, 700, 280]] },
+      { "id": "add1", "kind": "enemy", "label": "護衛1", "short": "護1", "color": "#e3a877", "size": 20, "appear": 18, "keys": [[0, 640, 420]] },
+      { "id": "add2", "kind": "enemy", "label": "護衛2", "short": "護2", "color": "#e3a877", "size": 20, "appear": 76, "keys": [[0, 720, 120]] },
+      { "id": "PLD", "role": "PLD", "keys": [[0, 110, 170], [10, 110, 170], [16, 600, 260], [26, 590, 400], [76, 590, 400], [82, 680, 160]] },
+      { "id": "DNC", "role": "DNC", "keys": [[0, 110, 220], [22, 110, 220], [31, 610, 340]] },
+      { "id": "RDM", "role": "RDM", "keys": [[0, 110, 270], [12, 110, 270], [17, 470, 290]] },
+      { "id": "COR", "role": "COR", "keys": [[0, 160, 330], [22, 160, 330], [30, 420, 380]] },
+      { "id": "BRD", "role": "BRD", "keys": [[0, 110, 330], [22, 110, 330], [28, 520, 440], [108, 520, 440], [112, 460, 480]] },
+      { "id": "BST", "role": "BST", "keys": [[0, 160, 220], [24, 160, 220], [32, 430, 200]] },
+      { "id": "PET", "role": "PET", "size": 15, "keys": [[0, 160, 270], [24, 160, 270], [34, 630, 220]] }
+    ],
+    "hp": [[0, 75], [18, 75], [76, 40], [96, 25], [108, 20], [130, 0]],
+    "hpAnchors": "75%・40%・25%・20%の到達局面のみ記事に記載。間の値は演出用の補間。",
+    "fx": [
+      { "from": 0, "to": 9, "type": "label", "at": "RDM", "text": "マジェスティ・ヘイストII・呪歌下地", "color": "#cfe3ff", "dy": -100 },
+      { "from": 10, "to": 17, "type": "line", "src": "PLD", "dst": "boss", "style": "move", "text": "センチネル→釣り" },
+      { "from": 18, "to": 25, "type": "line", "src": "RDM", "dst": "boss", "style": "debuff", "text": "スタイミー＋スリプルII" },
+      { "from": 18, "to": 25, "type": "label", "at": "boss", "text": "八重霞", "color": "#ffd28a", "dy": -60 },
+      { "from": 26, "to": 34, "type": "line", "src": "PLD", "dst": "add1", "style": "hate", "text": "フラッシュ・バッシュ" },
+      { "from": 33, "to": 37, "type": "line", "src": "DNC", "dst": "boss", "style": "ws", "text": "ボックスステップ" },
+      { "from": 38, "to": 45, "type": "line", "src": "RDM", "dst": "boss", "style": "debuff", "text": "サイレス・パライズII" },
+      { "from": 38, "to": 45, "type": "line", "src": "BRD", "dst": "boss", "style": "debuff" },
+      { "from": 46, "to": 50, "type": "line", "src": "RDM", "dst": "boss", "style": "debuff", "text": "ディアIII" },
+      { "from": 55, "to": 124, "type": "line", "src": "DNC", "dst": "add1", "style": "aa" },
+      { "from": 55, "to": 124, "type": "line", "src": "RDM", "dst": "add1", "style": "aa" },
+      { "from": 55, "to": 108, "type": "line", "src": "BRD", "dst": "add1", "style": "aa" },
+      { "from": 55, "to": 124, "type": "line", "src": "DNC", "dst": "boss", "style": "ws", "pulse": [7, 0.25, 0] },
+      { "from": 55, "to": 124, "type": "line", "src": "RDM", "dst": "boss", "style": "ws", "pulse": [7, 0.25, 2.3] },
+      { "from": 55, "to": 124, "type": "line", "src": "COR", "dst": "boss", "style": "ranged" },
+      { "from": 55, "to": 108, "type": "line", "src": "BRD", "dst": "boss", "style": "ws", "pulse": [7, 0.25, 4.6] },
+      { "from": 55, "to": 64, "type": "label", "at": "add1", "text": "TPは護衛で / WSは本体へ", "color": "#ffb3b8", "dy": 60 },
+      { "from": 55, "to": 130, "type": "line", "src": "PET", "dst": "boss", "style": "drain", "pulse": [5, 0.5, 0], "text": "TP吸収キッス" },
+      { "from": 66, "to": 72, "type": "line", "src": "BRD", "dst": "DNC", "style": "buff", "text": "ピアニッシモ＋スケルツォ" },
+      { "from": 76, "to": 84, "type": "line", "src": "PLD", "dst": "add2", "style": "hate", "text": "インターヴィーン→インビンシブル" },
+      { "from": 76, "to": 86, "type": "label", "at": "boss", "text": "八重霞：本体へWS禁止", "color": "#ffd28a", "dy": -60 },
+      { "from": 86, "to": 92, "type": "line", "src": "RDM", "dst": "boss", "style": "debuff", "text": "サボトゥール＋サイレス" },
+      { "from": 96, "to": 106, "type": "label", "at": "boss", "text": "アンリーシュ＋グランドパー → ワイルドカード", "color": "#f7d59b", "dy": -70 },
+      { "from": 108, "to": 124, "type": "line", "src": "BRD", "dst": "boss", "style": "ws", "pulse": [3, 0.4, 0], "text": "ガストスラッシュ連打" },
+      { "from": 108, "to": 114, "type": "label", "at": "boss", "text": "20%以下：暴れ", "color": "#ffb3b8", "dy": -60 }
+    ]
+  }
+}
